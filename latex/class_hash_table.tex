@@ -1,0 +1,97 @@
+\doxysection{Hash\+Table Class Reference}
+\hypertarget{class_hash_table}{}\label{class_hash_table}\index{HashTable@{HashTable}}
+
+
+Класс Хэш-\/таблицы.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_hash_table_a626012103b8bc3561f45304efb731944}{Hash\+Table}} (int size)
+\begin{DoxyCompactList}\small\item\em Инициализация хэш-\/таблицы заданного размера. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_hash_table_ad5b53b49a8e787d72c8c4cd83919cc39}{insert}} (\doxymbox{\hyperlink{struct_employee}{Employee}} emp)
+\begin{DoxyCompactList}\small\item\em Вставка элемента в хэш-\/таблицу с обработкой коллизий. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{struct_employee}{Employee}} $>$ \doxymbox{\hyperlink{class_hash_table_a4c6e74d9e63b962aa76c036047644a8a}{search}} (string target\+Name)
+\begin{DoxyCompactList}\small\item\em Поиск элементов по ключу. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_hash_table_a2f4feccf0aa7241fe8e0cd3e310b7c96}{get\+Collisions}} ()
+\begin{DoxyCompactList}\small\item\em Возвращает число зафиксированных коллизий. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс Хэш-\/таблицы. 
+
+\label{class_hash_table_doc-constructors}
+\Hypertarget{class_hash_table_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_hash_table_a626012103b8bc3561f45304efb731944}\index{HashTable@{HashTable}!HashTable@{HashTable}}
+\index{HashTable@{HashTable}!HashTable@{HashTable}}
+\doxysubsubsection{\texorpdfstring{HashTable()}{HashTable()}}
+{\footnotesize\ttfamily \label{class_hash_table_a626012103b8bc3561f45304efb731944} 
+Hash\+Table::\+\+Hash\+Table (\begin{DoxyParamCaption}\item[{int}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Инициализация хэш-\/таблицы заданного размера. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Размер таблицы. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_hash_table_doc-func-members}
+\Hypertarget{class_hash_table_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hash_table_a2f4feccf0aa7241fe8e0cd3e310b7c96}\index{HashTable@{HashTable}!getCollisions@{getCollisions}}
+\index{getCollisions@{getCollisions}!HashTable@{HashTable}}
+\doxysubsubsection{\texorpdfstring{getCollisions()}{getCollisions()}}
+{\footnotesize\ttfamily \label{class_hash_table_a2f4feccf0aa7241fe8e0cd3e310b7c96} 
+int Hash\+Table::\+get\+Collisions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Возвращает число зафиксированных коллизий. 
+
+\begin{DoxyReturn}{Returns}
+Число коллизий. 
+\end{DoxyReturn}
+\Hypertarget{class_hash_table_ad5b53b49a8e787d72c8c4cd83919cc39}\index{HashTable@{HashTable}!insert@{insert}}
+\index{insert@{insert}!HashTable@{HashTable}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{class_hash_table_ad5b53b49a8e787d72c8c4cd83919cc39} 
+void Hash\+Table::\+insert (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_employee}{Employee}}}]{emp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Вставка элемента в хэш-\/таблицу с обработкой коллизий. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em emp} & Данные сотрудника. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_hash_table_a4c6e74d9e63b962aa76c036047644a8a}\index{HashTable@{HashTable}!search@{search}}
+\index{search@{search}!HashTable@{HashTable}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \label{class_hash_table_a4c6e74d9e63b962aa76c036047644a8a} 
+vector$<$ \doxymbox{\hyperlink{struct_employee}{Employee}} $>$ Hash\+Table::\+search (\begin{DoxyParamCaption}\item[{string}]{target\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Поиск элементов по ключу. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Name} & Искомое ФИО. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Вектор найденных записей. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Var\+\_\+3\+\_\+2.\+cpp\end{DoxyCompactItemize}
