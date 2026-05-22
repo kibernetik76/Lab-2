@@ -25,30 +25,6 @@ struct Employee {
     int salary;        
 };
 
-/**
- * @brief Функция генерации случайных данных сотрудников.
- * @param count Количество генерируемых записей.
- * @return Вектор сгенерированных сотрудников.
- */
-vector<Employee> generateData(int count) {
-    string surnames[] = {"Ivanov", "Petrov", "Sidorov", "Smirnov", "Volkov", "Kozlov", "Lebedev", "Egorov", "Nikitin", "Popov"};
-    string names[] = {"I.", "P.", "S.", "A.", "V.", "K.", "L.", "E.", "N.", "M."};
-    string patrs[] = {"I.", "P.", "S.", "A.", "V.", "K.", "L.", "E.", "N.", "M."};
-    string posts[] = {"Accountant", "Analyst", "Manager", "Director", "Clerk"};
-    string depts[] = {"IT", "HR", "Finance", "Sales", "Marketing"};
-
-    vector<Employee> data;
-    for (int i = 0; i < count; i++) {
-        Employee emp;
-        emp.name = surnames[rand() % 10] + " " + names[rand() % 10] + patrs[rand() % 10];
-        emp.job = posts[rand() % 5];
-        emp.department = depts[rand() % 5];
-        emp.salary = 30000 + (rand() % 170000); 
-        data.push_back(emp);
-    }
-    return data;
-}
-/** @} */
 
 
 /**
@@ -419,6 +395,31 @@ public:
      */
     int getCollisions() { return collisionsCount; }
 };
+/** @} */
+
+/**
+ * @brief Функция генерации случайных данных сотрудников.
+ * @param count Количество генерируемых записей.
+ * @return Вектор сгенерированных сотрудников.
+ */
+vector<Employee> generateData(int count) {
+    string surnames[] = {"Ivanov", "Petrov", "Sidorov", "Smirnov", "Volkov", "Kozlov", "Lebedev", "Egorov", "Nikitin", "Popov"};
+    string names[] = {"I.", "P.", "S.", "A.", "V.", "K.", "L.", "E.", "N.", "M."};
+    string patrs[] = {"I.", "P.", "S.", "A.", "V.", "K.", "L.", "E.", "N.", "M."};
+    string posts[] = {"Accountant", "Analyst", "Manager", "Director", "Clerk"};
+    string depts[] = {"IT", "HR", "Finance", "Sales", "Marketing"};
+
+    vector<Employee> data;
+    for (int i = 0; i < count; i++) {
+        Employee emp;
+        emp.name = surnames[rand() % 10] + " " + names[rand() % 10] + patrs[rand() % 10];
+        emp.job = posts[rand() % 5];
+        emp.department = depts[rand() % 5];
+        emp.salary = 30000 + (rand() % 170000); 
+        data.push_back(emp);
+    }
+    return data;
+}
 /** @} */
 
 
