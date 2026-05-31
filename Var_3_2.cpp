@@ -80,7 +80,6 @@ class BST {
      * @return Указатель на добавленный узел или текущий узел.
      */
     BSTNode* addNode(BSTNode* node, Employee emp) {
-        // Если место пустое - создаем новый узел
         if (node == nullptr) {
             BSTNode* newNode = new BSTNode;
             newNode->key = emp.name;
@@ -98,7 +97,6 @@ class BST {
         else if (emp.name < node->key) {
             node->left = addNode(node->left, emp);
         } 
-        // Если больше - в правую
         else {
             node->right = addNode(node->right, emp);
         }
@@ -120,14 +118,14 @@ public:
      * @return Вектор найденных сотрудников с заданным ФИО.
      */
     vector<Employee> search(string targetName) {
-        BSTNode* current = root; // Начинаем поиск с верхушки
+        BSTNode* current = root; 
         
         while (current != nullptr) {
-            if (targetName == current->key) return current->records; // Нашли!
-            if (targetName < current->key) current = current->left;  // Ищем слева
-            else current = current->right;                           // Ищем справа
+            if (targetName == current->key) return current->records; 
+            if (targetName < current->key) current = current->left;  
+            else current = current->right;                          
         }
-        return {}; // Дошли до конца и не нашли
+        return {}; 
     }
 };
 /** @} */
@@ -470,7 +468,7 @@ int main() {
             namesToSearch.push_back(myData[rand() % N].name);
         }
 
-        long long dummyCounter = 0; // Пустышка, чтобы заставить процессор честно искать
+        long long dummyCounter = 0; 
 
         // 1
         auto timeStart = chrono::steady_clock::now();
